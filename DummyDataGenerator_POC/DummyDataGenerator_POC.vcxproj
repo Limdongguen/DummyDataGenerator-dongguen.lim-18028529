@@ -51,13 +51,33 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\persistence\JsonHelper.cpp" />
+    <ClCompile Include="..\src\persistence\SampleStore.cpp" />
+    <ClCompile Include="..\src\persistence\OrderStore.cpp" />
+    <ClCompile Include="..\src\persistence\InventoryStore.cpp" />
+    <ClCompile Include="..\src\persistence\ProductionStore.cpp" />
+    <ClCompile Include="..\src\service\AppService.cpp" />
+    <ClCompile Include="..\src\view\AppView.cpp" />
+    <ClCompile Include="..\src\reader\DataReader.cpp" />
     <ClCompile Include="..\src\generator\DataGenerator.cpp" />
     <ClCompile Include="..\src\writer\JsonWriter.cpp" />
+    <ClCompile Include="..\src\monitor\MonitorView.cpp" />
+    <ClCompile Include="..\src\monitor\MonitorApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\model\Models.h" />
+    <ClInclude Include="..\src\persistence\JsonHelper.h" />
+    <ClInclude Include="..\src\persistence\SampleStore.h" />
+    <ClInclude Include="..\src\persistence\OrderStore.h" />
+    <ClInclude Include="..\src\persistence\InventoryStore.h" />
+    <ClInclude Include="..\src\persistence\ProductionStore.h" />
+    <ClInclude Include="..\src\service\AppService.h" />
+    <ClInclude Include="..\src\view\AppView.h" />
+    <ClInclude Include="..\src\reader\DataReader.h" />
     <ClInclude Include="..\src\generator\DataGenerator.h" />
     <ClInclude Include="..\src\writer\JsonWriter.h" />
+    <ClInclude Include="..\src\monitor\MonitorView.h" />
+    <ClInclude Include="..\src\monitor\MonitorApp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
